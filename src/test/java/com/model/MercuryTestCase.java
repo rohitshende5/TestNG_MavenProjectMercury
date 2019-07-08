@@ -108,6 +108,8 @@ public class MercuryTestCase {
 	  System.out.println("Takes ScreenShot successfully");
 	  
 	  System.out.println("123");
+	  
+	  system.out.println("321");
   }
 
   @BeforeClass
@@ -118,6 +120,7 @@ public class MercuryTestCase {
 	  System.out.println("maximize browser Successfully");
 	  
 	  System.out.println("123");
+	    system.out.println("321");
   }
 
   @AfterClass
@@ -126,6 +129,8 @@ public class MercuryTestCase {
 	  System.out.println("deleteAllcookies under AfterClass");
 	  driver.manage().deleteAllCookies();
 	  System.out.println("DeleteAllcookies Successfully");
+	  
+	  system.out.println("321");
 	  
   }
 
@@ -137,6 +142,8 @@ public class MercuryTestCase {
 	  System.out.println("Open url successfully");
 	  
 	  System.out.println("123");
+	  
+	  system.out.println("321");
   }
 
   @AfterTest
@@ -145,6 +152,8 @@ public class MercuryTestCase {
 	  System.out.println("dbCoonectionClosed under AfterTest");
 	  
 	  System.out.println("123");
+	  
+	  system.out.println("321");
   }
 
   @BeforeSuite
@@ -156,6 +165,8 @@ public class MercuryTestCase {
 	  System.out.println("OpenBrowser Successfully");
 	  
 	  System.out.println("123");
+	  
+	  system.out.println("321");
   }
 
   @AfterSuite
@@ -165,6 +176,8 @@ public class MercuryTestCase {
 	  driver.close();
 	  
 	  System.out.println("123");
+	  
+	  system.out.println("321");
   }
 
 }

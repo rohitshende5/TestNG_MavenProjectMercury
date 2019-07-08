@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test name="Test">
+    <classes>
+      <class name="com.model.MercuryTestCase"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.model.MercuryTestCase">
+        <methods>
+          <include name="loginwithvalidds"/>
+          <include name="captureScreenShot"/>
+          <include name="openBrowser"/>
+          <include name="getAllcookies"/>
+          <include name="maximizeBrowser"/>
+          <include name="deleteAllcookies"/>
+          <include name="dbConnectionCloesd"/>
+          <include name="loginwithvalidds1"/>
+          <include name="loginwithvalidds2"/>
+          <include name="enterApplicationURL"/>
+          <include name="closedBrowser"/>
+        </methods>
+      </class> <!-- com.model.MercuryTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

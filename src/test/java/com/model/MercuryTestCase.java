@@ -106,6 +106,8 @@ public class MercuryTestCase {
 	  File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 	  FileUtils.copyFileToDirectory(src, new File("F:\\JAVA\\TESTING\\selinium\\MavenProjectMercury\\ScreenShot"));
 	  System.out.println("Takes ScreenShot successfully");
+	  
+	  System.out.println("123");
   }
 
   @BeforeClass
@@ -114,6 +116,8 @@ public class MercuryTestCase {
 	  System.out.println("MaximizeBrowser Under BeforeClass");
 	  driver.manage().window().maximize();
 	  System.out.println("maximize browser Successfully");
+	  
+	  System.out.println("123");
   }
 
   @AfterClass
@@ -131,12 +135,16 @@ public class MercuryTestCase {
 	  System.out.println("enterApplicationURL method under BeforeTest");
 	  driver.get("http://newtours.demoaut.com/mercurywelcome.php");
 	  System.out.println("Open url successfully");
+	  
+	  System.out.println("123");
   }
 
   @AfterTest
   public void dbConnectionCloesd()
   {
 	  System.out.println("dbCoonectionClosed under AfterTest");
+	  
+	  System.out.println("123");
   }
 
   @BeforeSuite
@@ -146,6 +154,8 @@ public class MercuryTestCase {
 	  System.setProperty("webdriver.chrome.driver", "F:\\SELENIUM_TESTING\\chromedriver.exe");
 	  driver=new ChromeDriver();
 	  System.out.println("OpenBrowser Successfully");
+	  
+	  System.out.println("123");
   }
 
   @AfterSuite
@@ -153,6 +163,8 @@ public class MercuryTestCase {
   {
 	  System.out.println("cloesdbrowser under AfterSuite");
 	  driver.close();
+	  
+	  System.out.println("123");
   }
 
 }
